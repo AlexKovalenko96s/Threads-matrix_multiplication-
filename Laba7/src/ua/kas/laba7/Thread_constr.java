@@ -43,7 +43,7 @@ public class Thread_constr implements Runnable{
 					}
 				}
 			sc1.close();
-			System.out.println("read(first)'s ending");
+//			System.out.println("read(first)'s ending");
 			
 			Scanner sc2 = new Scanner(new File(file2));
 			for (int i = 0; i < 100; i++){
@@ -52,7 +52,7 @@ public class Thread_constr implements Runnable{
 					}
 				}
 			sc2.close();
-			System.out.println("read(second)'s ending");
+//			System.out.println("read(second)'s ending");
 		} catch (IOException e1) {JOptionPane.showMessageDialog(null, "Files not found");}	
 		
 		//умножем матрицы
@@ -87,14 +87,14 @@ public class Thread_constr implements Runnable{
 		} catch (IOException e) {}	
 		
 		
-		//выводим в консоль
-		
-		for (int i = 0; i < res.length; i++) {
-			for (int j = 0; j < res[0].length; j++) {
-				System.out.format("%6d ", res[i][j]);
-			}
-			System.out.println();
-		}
+//		//выводим в консоль
+//		
+//		for (int i = 0; i < res.length; i++) {
+//			for (int j = 0; j < res[0].length; j++) {
+//				System.out.format("%6d ", res[i][j]);
+//			}
+//			System.out.println();
+//		}
 		
 		
 		
