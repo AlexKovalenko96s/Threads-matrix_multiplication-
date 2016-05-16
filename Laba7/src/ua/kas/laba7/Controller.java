@@ -35,6 +35,7 @@ public class Controller {
 	@FXML CheckBox cb11;
 	@FXML CheckBox cb12;
 	@FXML CheckBox cb_join;
+	static Thread t9;
 	int[][] mA = new int[100][100];
 	int[][] mB = new int[100][100];
 	int[][] res = new int[100][100];
@@ -110,7 +111,7 @@ public class Controller {
 		}
 		
 		if(cb9.isSelected()){
-			Thread t9 = new Thread(new Thread_constr("9","neChetnue9.1","neChetnue9.2", "Result9"));
+			t9 = new Thread(new Thread_constr("9","neChetnue9.1","neChetnue9.2", "Result9"));
 			t9.start();
 			if(cb_join.isSelected()){
 				t9.join();

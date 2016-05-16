@@ -34,6 +34,7 @@ public class Thread_constr implements Runnable{
 	public void run() {
 		
 		//считывает матрицы с файлов
+		//Controller.t9.join();
 		
 		try {
 			Scanner sc1 = new Scanner(new File(file1));
