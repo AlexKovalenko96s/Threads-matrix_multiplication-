@@ -50,9 +50,9 @@ public class Controller{
 	@FXML
 	CheckBox cb_join;
 	static Thread t9;
-	int[][] mA = new int[100][100];
-	int[][] mB = new int[100][100];
-	int[][] res = new int[100][100];
+	int[][] mA;// = new int[100][100];
+	int[][] mB;// = new int[100][100];
+	int[][] res;// = new int[100][100];
 
 	public void start(ActionEvent e) throws InterruptedException, IOException {
 
@@ -74,9 +74,9 @@ public class Controller{
 			if (cb_join.isSelected()) {
 				tm2.join();
 			}
-			this.mA=Thread_matrix.mA;
-			this.mB=Thread_matrix.mB;
-			Thread t2 = new Thread(new Thread_multiplication("2", mA, mB, "Result2"));
+			//this.mA=Thread_matrix.mA;
+			//this.mB=Thread_matrix.mB;
+			Thread t2 = new Thread(new Thread_multiplication("2", Thread_matrix.mA, Thread_matrix.mB, "Result2"));
 			t2.start();
 		}
 
