@@ -50,9 +50,9 @@ public class Controller{
 	@FXML
 	CheckBox cb_join;
 	static Thread t9;
-	int[][] mA;// = new int[100][100];
-	int[][] mB;// = new int[100][100];
-	int[][] res;// = new int[100][100];
+	int[][] mA = new int[100][100];
+	int[][] mB = new int[100][100];
+	int[][] res = new int[100][100];
 
 	public void start(ActionEvent e) throws InterruptedException, IOException {
 
@@ -183,7 +183,6 @@ public class Controller{
 		String time2 = find_time();
 		time2 = time2.substring(9);
 		int think2 = Integer.parseInt(time2);
-
 		if (think1 > think2) {
 			int abs = Math.abs(think2 - think1);
 			think = 999 - abs;
